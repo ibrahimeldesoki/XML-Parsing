@@ -14,7 +14,6 @@
                 <th>Email Volume</th>
                 <th>Pass</th>
                 <th>Fail</th>
-                <th>Rate</th>
             </tr>
             </thead>
     <?php
@@ -43,7 +42,7 @@
                                         <td><?=$record ->row->count?></td>
                                         <td><?=($record->row->policy_evaluated->dkim=='pass'?$dkim:0)?></td>
                                         <td><?=($record->row->policy_evaluated->spf=='pass'?'1':0)?></td>
-                                        <td><?=($record->row->policy_evaluated->spf=='pass'?'0':0)?></td>
+                                        
                                 </tr>           
 <?php
             }
